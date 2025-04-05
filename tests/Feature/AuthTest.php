@@ -5,17 +5,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Sanctum\Sanctum;
 
 uses(RefreshDatabase::class);
-// uses()->group('auth');
-// uses()->group('feature');
-// uses()->group('api');
-// uses()->group('auth-api');
-// uses()->group('auth-api-feature');
-// uses()->group('auth-api-feature-auth');
-// uses()->group('auth-api-feature-auth-auth');
-// uses()->group('auth-api-feature-auth-auth-auth');
-// uses()->group('auth-api-feature-auth-auth-auth-auth');
-// uses()->group('auth-api-feature-auth-auth-auth-auth-auth');
-// uses()->group('auth-api-feature-auth-auth-auth-auth-auth-auth');
+
 
 test('a user can register', function () {
     $response = $this->postJson('/api/register', [
